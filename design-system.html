@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Manual de design system da Mídia Masters com padrões de marca, cores, tipografia, componentes e diretrizes de manutenção."
+    />
+    <meta name="theme-color" content="#111312" />
+    <title>Design System | Mídia Masters</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/midia-masters-logo.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="ds-page">
+    <header class="ds-header">
+      <a class="brand" href="index.html" aria-label="Voltar para o site da Mídia Masters">
+        <span class="brand-mark">
+          <img src="assets/images/midia-masters-logo.svg" alt="" />
+        </span>
+        <span class="brand-text">Mídia Masters</span>
+      </a>
+      <nav class="ds-top-nav" aria-label="Navegação do manual">
+        <a href="index.html">Site</a>
+        <a href="#tokens">Tokens</a>
+        <a href="#componentes">Componentes</a>
+        <a href="#manutencao">Manutenção</a>
+      </nav>
+    </header>
+
+    <main class="ds-main">
+      <aside class="ds-sidebar" aria-label="Sumário">
+        <p class="eyebrow">Manual</p>
+        <a href="#visao-geral">Visão geral</a>
+        <a href="#marca">Marca</a>
+        <a href="#cores">Cores</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#layout">Layout</a>
+        <a href="#componentes">Componentes</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#manutencao">Manutenção</a>
+      </aside>
+
+      <div class="ds-content">
+        <section id="visao-geral" class="ds-hero">
+          <p class="eyebrow">Design system</p>
+          <h1>Manual visual e técnico da Mídia Masters.</h1>
+          <p>
+            Este guia documenta os padrões usados no site institucional para garantir consistência em futuras páginas,
+            landing pages, campanhas, componentes e ajustes de manutenção.
+          </p>
+          <div class="ds-hero-actions">
+            <a class="button button-primary" href="#componentes">Ver componentes</a>
+            <a class="button button-ghost" href="index.html">Abrir site</a>
+          </div>
+        </section>
+
+        <section id="marca" class="ds-section">
+          <div class="ds-section-head">
+            <p class="eyebrow">01 / Marca</p>
+            <h2>Identidade visual</h2>
+            <p>A marca usa um símbolo em M com construção angular, aparência tecnológica e aplicação em tons de teal.</p>
+          </div>
+
+          <div class="ds-grid two">
+            <article class="ds-card logo-showcase dark">
+              <img src="assets/images/midia-masters-logo.svg" alt="Símbolo da Mídia Masters" />
+              <strong>Uso principal em fundo escuro</strong>
+              <p>Preferir o SVG em interfaces web para nitidez em qualquer densidade de tela.</p>
+            </article>
+            <article class="ds-card logo-showcase light">
+              <img src="assets/images/midia-masters-logo.png" alt="Símbolo da Mídia Masters em PNG" />
+              <strong>PNG transparente</strong>
+              <p>Usar em previews, documentos, apresentações e ambientes que não aceitam SVG.</p>
+            </article>
+          </div>
+
+          <div class="ds-note">
+            <strong>Arquivos oficiais:</strong>
+            <code>assets/images/midia-masters-logo.svg</code> e
+            <code>assets/images/midia-masters-logo.png</code>.
+          </div>
+        </section>
+
+        <section id="tokens" class="ds-section">
+          <div id="cores" class="ds-section-head">
+            <p class="eyebrow">02 / Tokens</p>
+            <h2>Cores</h2>
+            <p>Paleta sóbria com base escura, superfícies em ivory e acentos em teal, âmbar e clay.</p>
+          </div>
+
+          <div class="ds-grid colors">
+            <article class="color-card" style="--swatch: #101312">
+              <span></span>
+              <strong>Dark</strong>
+              <code>#101312</code>
+              <p>Fundos premium, header, seções escuras.</p>
+            </article>
+            <article class="color-card" style="--swatch: #171c1a">
+              <span></span>
+              <strong>Dark 2</strong>
+              <code>#171C1A</code>
+              <p>Painéis, dashboards e superfícies elevadas.</p>
+            </article>
+            <article class="color-card" style="--swatch: #f7f1e3">
+              <span></span>
+              <strong>Ivory</strong>
+              <code>#F7F1E3</code>
+              <p>Texto em fundo escuro e realces claros.</p>
+            </article>
+            <article class="color-card" style="--swatch: #f5f1e8">
+              <span></span>
+              <strong>Background</strong>
+              <code>#F5F1E8</code>
+              <p>Base clara do site e áreas editoriais.</p>
+            </article>
+            <article class="color-card" style="--swatch: #2cb9a1">
+              <span></span>
+              <strong>Teal</strong>
+              <code>#2CB9A1</code>
+              <p>CTA, marca, links ativos e indicadores.</p>
+            </article>
+            <article class="color-card" style="--swatch: #50d2bd">
+              <span></span>
+              <strong>Teal Light</strong>
+              <code>#50D2BD</code>
+              <p>Hover, brilho de marca e contraste do logo.</p>
+            </article>
+            <article class="color-card" style="--swatch: #d89b43">
+              <span></span>
+              <strong>Amber</strong>
+              <code>#D89B43</code>
+              <p>Gráficos, dados e acentos secundários.</p>
+            </article>
+            <article class="color-card" style="--swatch: #a35644">
+              <span></span>
+              <strong>Clay</strong>
+              <code>#A35644</code>
+              <p>Apoio cromático pontual, nunca dominante.</p>
+            </article>
+          </div>
+
+          <div id="tipografia" class="ds-section-head compact">
+            <h2>Tipografia</h2>
+            <p>
+              A fonte padrão é a pilha do sistema com Inter como primeira opção. Não usar letter-spacing negativo nem
+              escala tipográfica baseada diretamente em viewport.
+            </p>
+          </div>
+
+          <div class="type-specimen">
+            <div>
+              <span>Display</span>
+              <h3>Mídia paga com clareza e controle.</h3>
+              <code>font-weight: 800 / line-height: 0.94 a 1</code>
+            </div>
+            <div>
+              <span>Heading</span>
+              <h4>Campanha sem página forte perde dinheiro.</h4>
+              <code>font-weight: 800 / line-height: 1</code>
+            </div>
+            <div>
+              <span>Body</span>
+              <p>
+                Combinamos estratégia, páginas de venda e mensuração para transformar investimento em receita
+                mensurável.
+              </p>
+              <code>font-weight: 400 / line-height: 1.5</code>
+            </div>
+            <div>
+              <span>Eyebrow</span>
+              <p class="eyebrow">Performance digital sob medida</p>
+              <code>uppercase / weight 800 / tracking 0.14em</code>
+            </div>
+          </div>
+        </section>
+
+        <section id="layout" class="ds-section">
+          <div class="ds-section-head">
+            <p class="eyebrow">03 / Layout</p>
+            <h2>Grid, espaçamento e superfícies</h2>
+            <p>O site usa uma base responsiva simples, com container máximo de 1160px e raio de borda de 8px.</p>
+          </div>
+
+          <div class="ds-grid three">
+            <article class="ds-card">
+              <strong>Container</strong>
+              <code>min(1160px, calc(100vw - 40px))</code>
+              <p>Usar para seções principais e evitar conteúdo colado nas bordas.</p>
+            </article>
+            <article class="ds-card">
+              <strong>Seções</strong>
+              <code>clamp(76px, 9vw, 128px)</code>
+              <p>Manter respiro vertical generoso, sem transformar áreas em cards flutuantes.</p>
+            </article>
+            <article class="ds-card">
+              <strong>Raio</strong>
+              <code>8px</code>
+              <p>Usar em botões, cards, campos, header e painéis. Evitar cantos muito arredondados.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="componentes" class="ds-section">
+          <div class="ds-section-head">
+            <p class="eyebrow">04 / Componentes</p>
+            <h2>Biblioteca base</h2>
+            <p>Componentes reutilizáveis do site. Preferir estas classes antes de criar novos padrões.</p>
+          </div>
+
+          <div class="component-demo dark">
+            <div class="brand" aria-label="Mídia Masters">
+              <span class="brand-mark">
+                <img src="assets/images/midia-masters-logo.svg" alt="" />
+              </span>
+              <span class="brand-text">Mídia Masters</span>
+            </div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#componentes">Botão primário</a>
+              <a class="button button-ghost" href="#componentes">Botão secundário</a>
+            </div>
+          </div>
+
+          <div class="ds-grid two">
+            <article class="service-card">
+              <span class="service-icon">01</span>
+              <h3>Card de serviço</h3>
+              <p>Usar para benefícios, entregáveis, etapas e blocos de escopo com texto curto.</p>
+            </article>
+            <article class="timeline-item">
+              <span>02</span>
+              <h3>Item de processo</h3>
+              <p>Usar em fluxos sequenciais, metodologia, onboarding e cronogramas curtos.</p>
+            </article>
+          </div>
+
+          <div class="ds-grid two">
+            <article class="proof-panel">
+              <p class="eyebrow">Painel de performance</p>
+              <div class="dashboard">
+                <div class="dashboard-top">
+                  <span>ROAS</span>
+                  <strong>10,2</strong>
+                </div>
+                <div class="dashboard-row">
+                  <span>Leads qualificados</span>
+                  <strong>15k</strong>
+                </div>
+                <div class="dashboard-row">
+                  <span>Taxa de conversão</span>
+                  <strong>7,4%</strong>
+                </div>
+              </div>
+            </article>
+            <form class="contact-form demo-form">
+              <label>
+                Nome
+                <input type="text" placeholder="Seu nome" />
+              </label>
+              <label>
+                E-mail
+                <input type="email" placeholder="nome@empresa.com" />
+              </label>
+              <button class="button button-primary" type="button">Enviar briefing</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="conteudo" class="ds-section">
+          <div class="ds-section-head">
+            <p class="eyebrow">05 / Conteúdo</p>
+            <h2>Voz e escrita</h2>
+            <p>A comunicação deve soar consultiva, objetiva e segura, sempre em primeira pessoa do plural.</p>
+          </div>
+
+          <div class="ds-grid two">
+            <article class="ds-card">
+              <strong>Usar</strong>
+              <ul>
+                <li>“Combinamos estratégia...”</li>
+                <li>“Atuamos nos pontos...”</li>
+                <li>“Conectamos as três camadas...”</li>
+                <li>Textos curtos, diretos e orientados a resultado.</li>
+              </ul>
+            </article>
+            <article class="ds-card warning">
+              <strong>Evitar</strong>
+              <ul>
+                <li>Falar da empresa em terceira pessoa no site principal.</li>
+                <li>Promessas vagas como “resultado garantido”.</li>
+                <li>Textos sem acentos ou com aparência temporária.</li>
+                <li>Paleta dominada por uma única cor.</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section id="manutencao" class="ds-section">
+          <div class="ds-section-head">
+            <p class="eyebrow">06 / Manutenção</p>
+            <h2>Checklist para futuras alterações</h2>
+            <p>Antes de publicar novas páginas ou ajustes, use estes critérios para preservar consistência.</p>
+          </div>
+
+          <div class="maintenance-list">
+            <article>
+              <strong>Arquivos principais</strong>
+              <p><code>index.html</code>, <code>design-system.html</code>, <code>css/styles.css</code> e <code>js/main.js</code>.</p>
+            </article>
+            <article>
+              <strong>Assets</strong>
+              <p>Manter imagens em <code>assets/images/</code>. Preferir SVG para logo e PNG/WebP para imagens raster.</p>
+            </article>
+            <article>
+              <strong>Responsivo</strong>
+              <p>Validar desktop, tablet e mobile. O texto não deve cortar, sobrepor ou depender de viewport para caber.</p>
+            </article>
+            <article>
+              <strong>Tracking</strong>
+              <p>O GTM atual é <code>GTM-W9CBG648</code>. Não remover os snippets do <code>head</code> e do <code>body</code>.</p>
+            </article>
+            <article>
+              <strong>Formulário</strong>
+              <p>Envio via FormSubmit para <code>guilherme.lga@gmail.com</code> com retorno para <code>midiamasters.com.br</code>.</p>
+            </article>
+            <article>
+              <strong>Deploy</strong>
+              <p>Projeto estático pronto para Vercel. Não há build obrigatório.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
