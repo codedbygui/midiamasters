@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mídia Masters</title>
+  <desc id="desc">Símbolo M da Mídia Masters em tons de verde.</desc>
+  <path d="M96 182 256 292 416 182v56L256 348 96 238v-56Z" fill="#50D2BD"/>
+  <path d="M96 270 256 380 356 311v56L256 436 144 359v77l-48 34V270Z" fill="#2CB9A1"/>
+  <path d="M416 182v288l-48-34V270l-112 77v-55l160-110Z" fill="#50D2BD"/>
+</svg>
